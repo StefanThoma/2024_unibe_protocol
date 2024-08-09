@@ -16,7 +16,7 @@ bibliography: references.bib
 :::
 
 ::: {.column width="40%"}
-![](media/useR_Presentation.JPG)
+![](images/useR_Presentation.JPG)
 :::
 :::
 
@@ -47,7 +47,7 @@ I currently live in Bern and Work at Roche Basel as a data scientist.
 :::
 
 ::: {.column width="40%"}
-![](media/Roche_Tower.jpg)
+![](images/Roche_Tower.jpg)
 :::
 :::
 
