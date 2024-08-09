@@ -5,8 +5,8 @@ pages:
     - mkdir public
     - quarto render --output-dir public
     - find public -type f
-    - mkdir public/site_libs/revealjs/dist/theme/images
-    - cp images/* public/site_libs/revealjs/dist/theme/images
+    # - mkdir public/site_libs/revealjs/dist/theme/images
+    # - cp images/* public/site_libs/revealjs/dist/theme/images
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
