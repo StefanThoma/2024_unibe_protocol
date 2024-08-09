@@ -4,8 +4,8 @@ pages:
   script:
     - mkdir public
     - quarto render --output-dir public
-    - mkdir public/site_libs/revealjs/dist/theme/images
     - find public -type f
+    - mkdir public/site_libs/revealjs/dist/theme/images
     - cp images/* public/site_libs/revealjs/dist/theme/images
   artifacts:
     paths:
