@@ -1,0 +1,181 @@
+---
+title: "Why we need protocols in science"
+format: 
+  roche-revealjs: default
+# template: roche
+author: 
+  - Stefan Thoma
+bibliography: references.bib
+---
+
+# About me
+
+::: columns
+::: {.column width="60%"}
+-   MSc Psychology in Methods, Cognition & Perception at Unibe
+-   MSc in Statistics at ETHZ
+:::
+
+::: {.column width="40%"}
+![](media/useR_Presentation.JPG)
+:::
+:::
+
+::: notes
+
+Hello everyone, 
+
+Today, I want to talk about the importance of protocols and statistical analysis plans in clinical trials, and why regulators are so important in my opinion. 
+
+But first, I'll talk a bit about myself, the work that I do, about the replication crisis in psychology - and how this replication crisis relates to the importance of the protocol. 
+
+So, about myself: Originally, I'm from Baselland. But I studied Psychology in Bern and did masters in cognitive psychology and research method. 
+
+Then I did a master in statistics at ETH. 
+
+I currently live in Bern and Work at Roche Basel as a data scientist.
+
+:::
+
+## Current work
+
+::: columns
+::: {.column width="60%"}
+-   At Roche working in a blended role as
+    -   Statistical programmer
+    -   Biostatistician
+    -   R package developer, e.g. {admiral}
+:::
+
+::: {.column width="40%"}
+![](media/Roche_Tower.jpg)
+:::
+:::
+
+::: notes
+I have been working at Roche for about 2 years. 
+For anyone who doesn't know, Roche is a giant pharmaceutical company with around 100 000 employees. 
+I work in Pharma Product Development in the Data and Statistical sciences team. 
+We are around 300 Data scientists, data managers and statisticians sharing three floors in one of the towers in Basel. 
+I don't know exactly how many people work in our team globally, but quite a few more.
+
+The main goal of our team is to generate evidence of whether a drug is efficacious and safe for treating specific diseases. 
+The way we do that is by designing and evaluating clinical trials in close collaboration with clinical scientists, physicians, and patients. 
+If a drug works as we intend, we must provide valid and reliable evidence to the regulators to be able to get the drug on the market.
+
+The data science aspect of this involves many different tasks, and at Roche this is typically split across a team of data scientists. 
+On a clinical trial team you would typically have at least one Biostatistician, one statistical programmer, and a data manager.
+
+I was originally hired as a statistical programmer where I would program standarised data-sets, run analyses, and generate outputs for the clinical study report. 
+Incidentally, the report would then be written by medical writers, another role. 
+
+A biostatistician on the other hand would be more responsible for planning the trial, deciding on the right statistical analyses, and ensuring trial integrity from a statistical perspective. 
+
+As I have a degree in statistics, I am now also involved in some projects as a statistician. 
+So now I am in what we call a fluid role as both a statistician and statistical programmer, and I am also involved in some r package development projects.
+
+:::
+
+## Replication crisis in Psychology
+
+-   Researchers are unable to replicate many findings from psychological experiments.
+    -   @klein2018 managed to replicate only 15 / 28 studies
+    -   @opensciencecollaboration2015 replicated only 36 / 100 studies, with on average half of the original effect size
+-   @yarkoni2022: How generalisable are findings from psychological experiments?
+
+## Many labs result
+
+![Results of @opensciencecollaboration2015](images/349_aac4716_fa.jpeg)
+
+## Why? Misaligned incentives for researchers {.smaller}
+
+-   Publication bias
+
+    -   Harder and less likely to publish null-results
+
+    -   More likely to continue looking for something
+
+-   Questionable research practices undermine trial integrity
+
+    -   Hypothesising After Results are Known (HARK-ing)
+
+    -   P-Hacking
+
+-   Fraud, for an example see Data Colada posts by @simonsohn2023
+
+    -   Hard to spot, as open data is not very common
+
+-   Doing replications is not "novel research", less prestigious
+
+## Realign researcher incentives
+
+**Move away from rewarding the most headline-grabbing findings**
+
+-   Preregistration, see [OSF](https://osf.io/)
+    -   Support trial integrity / validity
+    -   Preregistered reports almost guarantee publication before data collection
+    -   Published based on the merits of the hypothesis and methods, independent of results
+-   Open research
+    -   Openly available data and methods
+        -   Encourage collaboration
+        -   Reduce ease of fraud
+    -   Openly available publications
+-   Data as publication rewards data collection
+    -   Increases data quality
+    -   Treated as legitimate research
+
+## Things are changing
+
+Structural changes are happening
+
+![@korbmacher2023](images/44271_2023_3_Fig1_HTML.webp)
+
+
+
+<!-- | Many psychological effects experiments have failed \| -->
+<!-- | maybe talk about baserate problem. e.g. if you have 1000 hypothesis and they have 10% chance of being true, then you would find 80 studies to be truly positive (80% power), but would 900 \* alpha% = 45 be falsely true out of 100 studies @klein2018 \| -->
+<!-- | \## Ways to fix this \| -->
+<!-- | - Preregistration, see OSF - Set different incentives, Publish based on the merits of the methods and the interesting research question, not on the results - Journals should publish \| -->
+
+## Protocol - Study blueprint
+
+- Includes:
+  - Motivation and objectives
+  - Primary and key secondary endpoints, as estimands
+  - Methodology
+  - Organisation
+  - Some statistical considerations, e.g. sample size & power, etc. 
+
+- Details should allow recreation of the study
+
+## Estimands
+
+An **estimand** is a precise description of the treatment effect to be estimated in a clinical trial. 
+- "What exactly do we want to learn from the trial?"
+
+- **Key Attributes:**
+  - **Population:** The specific group of patients of interest.
+  - **Treatment:** The intervention or comparison of interest.
+  - **Outcome:** The specific outcome variable being measured.
+  - **Intercurrent Events:** Events that occur after treatment initiation that affect the interpretation of the outcome (e.g., use of rescue medication, treatment discontinuation).
+  - **Population-level Summary:** The summary measure that will be used to quantify the treatment effect (e.g., difference in means, hazard ratio).
+
+::: notes
+
+
+
+:::
+
+## Statistical analysis plan
+
+- Describes the precise statistical analysis for each estimand. 
+- Written before looking at the data
+- Confirmatory analysis with less researchers degree of freedom
+- Exploratory analysis still encouraged, but must be declared as such
+
+
+## Regulation
+
+
+
+

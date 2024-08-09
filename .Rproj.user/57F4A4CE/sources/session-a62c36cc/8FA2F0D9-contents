@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+
+$pink: rgb(219, 48, 122);
+
+/*-- scss:rules --*/
+.color-mypink {
+  color: $pink;
+}
+
+@font-face {
+  font-family: "MyRoche";
+  src: url("_extensions/quarto-journals/roche/fonts/roche-sans/RocheSansLight-Light.ttf");
+}
+@font-face {
+  font-family: "MyRoche";
+  src: url("_extensions/quarto-journals/roche/fonts/roche-sans/RocheSans-Regular.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MyRoche";
+  src: url("_extensions/quarto-journals/roche/fonts/roche-sans/RocheSansLight-LightItalic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyRoche";
+  src: url("_extensions/quarto-journals/roche/fonts/roche-sans/RocheSans-Italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}

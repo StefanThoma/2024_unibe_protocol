@@ -1,0 +1,18 @@
+%% -- Article metainformation (author, title, ...) -----------------------------
+
+%% Author information
+\Plainauthor{$for(by-author)$$it.name.literal$$sep$, $endfor$} %% comma-separated
+\department{$for(by-affiliation)$$it.name$$sep$, $endfor$} %% comma-separated
+\reviewername{$reviewer.name$}
+\reviewerdep{$reviewer.department$}
+\sponsorname{$sponsor.name$}
+\sponsordep{$sponsor.department$}
+
+\metainfoversion{$metainfo.version$}
+\metainfoinfo{$metainfo.info$}
+\metainforepo{$metainfo.repo$}
+\metainforiskdata{$metainfo.risk.anonymized_data$}
+\metainforiskqms{$metainfo.risk.qms$}
+\metainforiskcritical{$metainfo.risk.critical$}
+
+\title{$title$}

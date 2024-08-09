@@ -1,0 +1,24 @@
+.reveal .slides > section > section { 
+  text-align:left; 
+}
+
+@font-face {
+  font-family: "MyRoche";
+  src: url("fonts/roche-sans/RocheSansLight-Light.ttf");
+}
+@font-face {
+  font-family: "MyRoche";
+  src: url("fonts/roche-sans/RocheSans-Regular.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MyRoche";
+  src: url("fonts/roche-sans/RocheSansLight-LightItalic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyRoche";
+  src: url("fonts/roche-sans/RocheSans-Italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
