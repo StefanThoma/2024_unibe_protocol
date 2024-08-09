@@ -2,7 +2,7 @@ project:
   title: "2024_unibe_protocol"
 
 website:
-  title: "Debugging in R"
+  title: "Why we need protocols in research"
   navbar:
     left:
       - href: index.qmd
