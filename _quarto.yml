@@ -1,5 +1,15 @@
 project:
   title: "2024_unibe_protocol"
 
+website:
+  title: "Debugging in R"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Presentation
 
+format:
+  html:
+    theme: cosmo
+    toc: false
 
