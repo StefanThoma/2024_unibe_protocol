@@ -5,6 +5,7 @@ pages:
     - mkdir public
     - quarto render --output-dir public
     - mkdir public/site_libs/revealjs/dist/theme/images
+    - find public -type f
     - cp images/* public/site_libs/revealjs/dist/theme/images
   artifacts:
     paths:
