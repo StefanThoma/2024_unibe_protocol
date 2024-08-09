@@ -176,5 +176,7 @@ An **estimand** is a precise description of the treatment effect to be estimated
 ## Regulation
 
 
+## Resources
+
 
 
