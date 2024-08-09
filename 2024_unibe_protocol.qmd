@@ -2,7 +2,6 @@
 title: "Why we need protocols in science"
 format: 
   roche-revealjs: default
-# template: roche
 author: 
   - Stefan Thoma
 bibliography: references.bib
