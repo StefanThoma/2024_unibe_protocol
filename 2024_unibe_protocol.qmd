@@ -2,16 +2,17 @@
 title: "Why we need protocols in science"
 author: 
   - Stefan Thoma
+date: "21. August 2024"
 format:
    roche-revealjs: default
 bibliography: references.bib
 ---
 
+# About me
+
 <!-- to publish:  -->
 
 <!-- quarto publish gh-pages 2024_unibe_protocol.qmd -->
-
-# About me
 
 ::: columns
 ::: {.column width="60%"}
@@ -116,7 +117,7 @@ So, how did we get into this situation?
 
     -   Hypothesising After Results are Known (HARK-ing)
 
-    -   P-Hacking
+    -   P-Hacking, e.g. adding covariates until p-value is significant 
 
 -   Fraud, for an example see Data Colada posts by @simonsohn2023
 
@@ -157,16 +158,8 @@ Lastly, doing replications is not considered novel research, and is therefore le
 
 ![From @science](images/registered_reports.width-800.png)
 
--   Open research
-    -   Openly available data and methods
-        -   Encourage collaboration
-        -   Reduce ease of fraud
-    -   Openly available publications
--   Data as publication rewards data collection
-    -   Increases data quality
-    -   Treated as legitimate research
-
 ::: notes
+
 So, how can we realign the incentives for researchers?
 
 One way is to move away from rewarding the most headline-grabbing findings.
@@ -174,6 +167,20 @@ One way is to move away from rewarding the most headline-grabbing findings.
 One way to do this is to preregister your study. Preregistration is the practice of writing down your research plan before you start collecting data. This generally includes your research question, your hypothesis, your methods, and your analysis plan. Ideally, this should be done before even starting the experiment, and it is a good idea to publish this plan so that you cannot change it afterwards. One place where you can do this is the Open Science Framework, which is a platform for open research practices. They also provide really good templates for preregistrations.
 
 A step further are preregistered reports. These are papers that are basically already written and approved for publication by a journal before the data is collected. This is a great way to ensure that the publication is based on the merits of the hypothesis and methods, independent of the results.
+
+:::
+
+## Open research practices
+
+-   Openly available data and methods
+-   Encourage collaboration
+-   Reduce ease of fraud
+-   Openly available publications
+-   Data as publication rewards data collection
+    -   Increases data quality
+    -   Treated as legitimate research
+
+::: notes
 
 Other structural changes may benefit the field as well. Open research is another way to realign incentives. This means that data and methods are openly available. This encourages collaboration, and reduces the ease of fraud. It also makes it easier to replicate studies, and to build on previous research.
 
@@ -210,6 +217,7 @@ However, it is important to remember that these changes are not yet the norm, an
 When I switched to pharma, I was very happy to learn that practices similar to those described above were not just standard in the industry, but mandated and followed up on by regulators.
 
 Protocols are required and an important part of setting up a clinical trial.
+They fill the role of a preregistration.
 
 Th Protocol is a study blueprint that includes the motivation and objectives of the study, the primary and key secondary endpoints as estimands, the methodology, the organisation, and some statistical considerations, such as sample size and power.
 
@@ -230,7 +238,7 @@ An **estimand** (@pohl2021) is a precise description of the treatment effect to 
 ::: notes
 I mentioned estimands before when talking about endpoints. I want to explain this a bit more, and I'll use one of my current trials as an example, although I simplify the example a little.
 
-We use estimands in our protocols to define exactly what question we want to answer with our study. We can have multiple estimands, for multiple studies, their importance is usually hierarchical. These estimands force us to think about the five most important aspects of our hypothesis.
+We use estimands in our protocols to define exactly what question we want to answer with our study. We can have multiple estimands, for multiple questions, their importance is usually hierarchical. These estimands force us to think about the five most important aspects of our hypothesis.
 
 Namely, the population, ie. to whom does the hypothesis apply? To which people is the estimated effect relevant and generalizable? In [one study](https://forpatients.roche.com/en/trials/muscle-and-peripheral-nerve-disease/dmd/an-open-label-study-to-assess-the-efficacy-and-safety-o-12382.html) I currently work on the population for the primary Estimand could be defined as "ambulatory and non-ambulatory patients with Duchenne muscular dystrophy (DMD) age ≥ 8 to \< 16 years old receiving corticosteroid therapy"
 
