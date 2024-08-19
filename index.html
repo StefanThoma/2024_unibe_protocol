@@ -11,6 +11,7 @@
   <meta name="generator" content="quarto-1.4.554">
 
   <meta name="author" content="Stefan Thoma">
+  <meta name="dcterms.date" content="2024-08-21">
   <title>Why we need protocols in science</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -357,15 +358,13 @@ Stefan Thoma
 </div>
 </div>
 
-</section>
-<section class="slide level2">
-
-<!-- to publish:  -->
-<!-- quarto publish gh-pages 2024_unibe_protocol.qmd -->
+  <p class="date">2024-08-21</p>
 </section>
 <section>
 <section id="about-me" class="title-slide slide level1 center">
 <h1>About me</h1>
+<!-- to publish:  -->
+<!-- quarto publish gh-pages 2024_unibe_protocol.qmd -->
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
@@ -480,7 +479,7 @@ Stefan Thoma
           display:block!important;
       }</style></aside>
 </section>
-<section id="misaligned-incentives-for-researchers" class="slide level2 smaller">
+<section id="misaligned-incentives-for-researchers" class="slide level2">
 <h2>Misaligned incentives for researchers</h2>
 <ul>
 <li><p>Publication bias</p>
@@ -491,7 +490,7 @@ Stefan Thoma
 <li><p>Questionable research practices undermine trial integrity</p>
 <ul>
 <li><p>Hypothesising After Results are Known (HARK-ing)</p></li>
-<li><p>P-Hacking</p></li>
+<li><p>P-Hacking, e.g.&nbsp;adding covariates until p-value is significant</p></li>
 </ul></li>
 <li><p>Fraud, for an example see Data Colada posts by <span class="citation" data-cites="simonsohn2023">Simonsohn, Nelson, and Simmons (<a href="#/resources" role="doc-biblioref" onclick="">2023</a>)</span></p>
 <ul>
@@ -522,6 +521,10 @@ Stefan Thoma
           display:block!important;
       }</style></aside>
 </section>
+<section class="slide level2">
+
+
+<img data-src="images/significant.png" class="r-stretch"></section>
 <section id="realign-researcher-incentives" class="slide level2">
 <h2>Realign researcher incentives</h2>
 <p><strong>Move away from rewarding the most headline-grabbing findings</strong></p>
@@ -534,16 +537,30 @@ Stefan Thoma
 </ul></li>
 </ul>
 
-<img data-src="images/registered_reports.width-800.png" class="r-stretch quarto-figure-center"><p class="caption">From <span class="citation" data-cites="science">Science (<a href="#/resources" role="doc-biblioref" onclick="">n.d.</a>)</span></p><ul>
-<li>Open research
+<img data-src="images/registered_reports.width-800.png" class="r-stretch quarto-figure-center"><p class="caption">From <span class="citation" data-cites="science">Science (<a href="#/resources" role="doc-biblioref" onclick="">n.d.</a>)</span></p><aside class="notes">
+<p>So, how can we realign the incentives for researchers?</p>
+<p>One way is to move away from rewarding the most headline-grabbing findings.</p>
+<p>One way to do this is to preregister your study. Preregistration is the practice of writing down your research plan before you start collecting data. This generally includes your research question, your hypothesis, your methods, and your analysis plan. Ideally, this should be done before even starting the experiment, and it is a good idea to publish this plan so that you cannot change it afterwards. One place where you can do this is the Open Science Framework, which is a platform for open research practices. They also provide really good templates for preregistrations.</p>
+<p>A step further are preregistered reports. These are papers that are basically already written and approved for publication by a journal before the data is collected. This is a great way to ensure that the publication is based on the merits of the hypothesis and methods, independent of the results.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="open-research-practices" class="slide level2">
+<h2>Open research practices</h2>
 <ul>
-<li>Openly available data and methods
-<ul>
+<li>Openly available data and methods</li>
 <li>Encourage collaboration</li>
 <li>Reduce ease of fraud</li>
-</ul></li>
 <li>Openly available publications</li>
-</ul></li>
 <li>Data as publication rewards data collection
 <ul>
 <li>Increases data quality</li>
@@ -551,10 +568,6 @@ Stefan Thoma
 </ul></li>
 </ul>
 <aside class="notes">
-<p>So, how can we realign the incentives for researchers?</p>
-<p>One way is to move away from rewarding the most headline-grabbing findings.</p>
-<p>One way to do this is to preregister your study. Preregistration is the practice of writing down your research plan before you start collecting data. This generally includes your research question, your hypothesis, your methods, and your analysis plan. Ideally, this should be done before even starting the experiment, and it is a good idea to publish this plan so that you cannot change it afterwards. One place where you can do this is the Open Science Framework, which is a platform for open research practices. They also provide really good templates for preregistrations.</p>
-<p>A step further are preregistered reports. These are papers that are basically already written and approved for publication by a journal before the data is collected. This is a great way to ensure that the publication is based on the merits of the hypothesis and methods, independent of the results.</p>
 <p>Other structural changes may benefit the field as well. Open research is another way to realign incentives. This means that data and methods are openly available. This encourages collaboration, and reduces the ease of fraud. It also makes it easier to replicate studies, and to build on previous research.</p>
 <p>Data as publication is a way to reward data collection. This increases data quality, and treats data collection as legitimate research. In a way, this allows researchers to focus on separate aspects of research, and rewards not just the study outcomes but also the way to get there, allowing also for different paths to researchers success.</p>
 <style type="text/css">
@@ -605,7 +618,7 @@ Stefan Thoma
 </ul>
 <aside class="notes">
 <p>When I switched to pharma, I was very happy to learn that practices similar to those described above were not just standard in the industry, but mandated and followed up on by regulators.</p>
-<p>Protocols are required and an important part of setting up a clinical trial.</p>
+<p>Protocols are required and an important part of setting up a clinical trial. They fill the role of a preregistration.</p>
 <p>Th Protocol is a study blueprint that includes the motivation and objectives of the study, the primary and key secondary endpoints as estimands, the methodology, the organisation, and some statistical considerations, such as sample size and power.</p>
 <p>Protocols should be detailed enough to allow other researchers to recreate the study. With a proper protocol in place, you should be unable to pass off exploratory research as confirmatory research. Of course, the protocol can be changed, but this should be done in a transparent way, and the changes must be justified, else you get in trouble with the regulators.</p>
 <style type="text/css">
@@ -622,7 +635,7 @@ Stefan Thoma
 </section>
 <section id="estimands" class="slide level2">
 <h2>Estimands</h2>
-<p>An <strong>estimand</strong> is a precise description of the treatment effect to be estimated in <a href="https://forpatients.roche.com/en/trials/muscle-and-peripheral-nerve-disease/dmd/an-open-label-study-to-assess-the-efficacy-and-safety-o-12382.html">a clinical trial</a>. - “What exactly do we want to learn from the trial?”</p>
+<p>An <strong>estimand</strong> (<span class="citation" data-cites="pohl2021">Pohl et al. (<a href="#/resources" role="doc-biblioref" onclick="">2021</a>)</span>) is a precise description of the treatment effect to be estimated in <a href="https://forpatients.roche.com/en/trials/muscle-and-peripheral-nerve-disease/dmd/an-open-label-study-to-assess-the-efficacy-and-safety-o-12382.html">a clinical trial</a>. - “What exactly do we want to learn from the trial?”</p>
 <ul>
 <li><strong>Key Attributes:</strong>
 <ul>
@@ -635,7 +648,7 @@ Stefan Thoma
 </ul>
 <aside class="notes">
 <p>I mentioned estimands before when talking about endpoints. I want to explain this a bit more, and I’ll use one of my current trials as an example, although I simplify the example a little.</p>
-<p>We use estimands in our protocols to define exactly what question we want to answer with our study. We can have multiple estimands, for multiple studies, their importance is usually hierarchical. These estimands force us to think about the five most important aspects of our hypothesis.</p>
+<p>We use estimands in our protocols to define exactly what question we want to answer with our study. We can have multiple estimands, for multiple questions, their importance is usually hierarchical. These estimands force us to think about the five most important aspects of our hypothesis.</p>
 <p>Namely, the population, ie. to whom does the hypothesis apply? To which people is the estimated effect relevant and generalizable? In <a href="https://forpatients.roche.com/en/trials/muscle-and-peripheral-nerve-disease/dmd/an-open-label-study-to-assess-the-efficacy-and-safety-o-12382.html">one study</a> I currently work on the population for the primary Estimand could be defined as “ambulatory and non-ambulatory patients with Duchenne muscular dystrophy (DMD) age ≥ 8 to &lt; 16 years old receiving corticosteroid therapy”</p>
 <p>The treatment, what is the intervention or comparison of interest? Again, in the study I work on, the treatment is the investigational drug, given as an injection under the skin in the belly or thigh at Weeks 0, 2, 4, and every 4 weeks thereafter for 104 weeks. My study is a bit special as there is no control arm in the study, but the treatment is compared to real world data.</p>
 <p>The outcome, what is the specific outcome variable being measured? For us that would be the change in Bone Mineral Density at week 52 compared to baseline.</p>
@@ -688,6 +701,7 @@ This is to avoid the so-called p-hacking, where researchers keep trying differen
 </ul>
 <aside class="notes">
 <p>Regulation is a big part of the pharma industry, and it is a good thing. It encourages good scientific practice, ensures transparency and reproducibility, and sets standards in data quality and documentation. It is a hurdle that every project needs to pass, but it is a necessary one, to ensure that the results are reliable and trustworthy.</p>
+<p>Seemingly adversarial relationships between industry and regulators are actually beneficial for the patients.</p>
 <p>And regulators, especially the FDA and EMA, are being taken VERY seriously. On project teams, when faced with difficult decisions, we would often ask ourselves “What would the FDA say?”? Would they accept this? Even when the team would be convinced that a certain decision was the right one, if the FDA would not accept it, we would not do it. And in hindsight those were the right decisions.</p>
 <p>In a way, in our minds, these regulators serve as a kind of objective scientist. Trying to put ourselves in their shoes helped us step back and look at the study with a more objective eye.</p>
 <style type="text/css">
@@ -713,6 +727,19 @@ This is to avoid the so-called p-hacking, where researchers keep trying differen
 <li>Statistical Analysis Plans ensure validity of confirmatory results</li>
 <li>Regulators ensure good scientific practice</li>
 </ul>
+<aside class="notes">
+<p>Mention that having a signed-off protocol after data collection will help you stand up to anyone asking you to cut corners. It is your shield.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="resources" class="slide level2 smaller scrollable">
 <h2>Resources</h2>
@@ -734,6 +761,9 @@ Korbmacher, Max, Flavio Azevedo, Charlotte R. Pennington, Helena Hartmann, Madel
 </div>
 <div id="ref-opensciencecollaboration2015" class="csl-entry" role="listitem">
 Open Science Collaboration. 2015. <span>“Estimating the Reproducibility of Psychological Science.”</span> <em>Science</em> 349 (6251): aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>.
+</div>
+<div id="ref-pohl2021" class="csl-entry" role="listitem">
+Pohl, Moritz, Lukas Baumann, Rouven Behnisch, Marietta Kirchner, Johannes Krisam, and Anja Sander. 2021. <span>“Estimands<span></span>a Basic Element for Clinical Trials.”</span> <em>Deutsches Ärzteblatt International</em> 118 (51-52): 883–88. <a href="https://doi.org/10.3238/arztebl.m2021.0373">https://doi.org/10.3238/arztebl.m2021.0373</a>.
 </div>
 <div id="ref-science" class="csl-entry" role="listitem">
 Science, Center for Open. n.d. <span>“Registered Reports: Peer Review Before Results Are Known to Align Scientific Values and Practices.”</span> <a href="https://www.cos.io/initiatives/registered-reports">https://www.cos.io/initiatives/registered-reports</a>.
