@@ -117,7 +117,7 @@ So, how did we get into this situation?
 
     -   Hypothesising After Results are Known (HARK-ing)
 
-    -   P-Hacking, e.g. adding covariates until p-value is significant 
+    -   P-Hacking, e.g. adding covariates until p-value is significant (@tsang2025)
 
 -   Fraud, for an example see Data Colada posts by @simonsohn2023
 
@@ -149,11 +149,11 @@ Fraud is also a problem, but it is not as common as the other practices. However
 Lastly, doing replications is not considered novel research, and is therefore less prestigious. This is a problem, because replications are a very important part of the scientific process. Especially so, when the original study results are very surprising or counterintuitive, the effect size was large, and the sample size was small.
 :::
 
----
+------------------------------------------------------------------------
 
 ![](images/significant.png)
 
----
+------------------------------------------------------------------------
 
 ## Realign researcher incentives
 
@@ -167,21 +167,17 @@ Lastly, doing replications is not considered novel research, and is therefore le
 ![From @science](images/registered_reports.width-800.png)
 
 ::: notes
-
 So, how can we realign the incentives for researchers?
 
-This is not really achievable on a personal level and requires change in the current publication and research system.
-What we can do on an individual researcher or research group level is 
+This is not really achievable on a personal level and requires change in the current publication and research system. What we can do on an individual researcher or research group level is
 
 One way to do this is to preregister your study. Preregistration is the practice of writing down your research plan before you start collecting data. This generally includes your research question, your hypothesis, your methods, and your analysis plan. Ideally, this should be done before even starting the experiment, and it is a good idea to publish this plan so that you cannot change it afterwards. One place where you can do this is the Open Science Framework, which is a platform for open research practices. They also provide really good templates for preregistrations.
 
 A step further are preregistered reports. These are papers that are basically already written and approved for publication by a journal before the data is collected. This is a great way to ensure that the publication is based on the merits of the hypothesis and methods, independent of the results.
 
-Of course, the initial effort for this seems quite large. 
+Of course, the initial effort for this seems quite large.
 
-You have to write a whole paper, develope the analysis, make all the decisions, all without ever collecting or seeing any data.
-But this is exactly the point. This will allow you to get feedback on your research plan at a stage where you can still change things, without having to collect any additional data. 
-Plus: A publication is almost guarranteed. 
+You have to write a whole paper, develope the analysis, make all the decisions, all without ever collecting or seeing any data. But this is exactly the point. This will allow you to get feedback on your research plan at a stage where you can still change things, without having to collect any additional data. Plus: A publication is almost guarranteed.
 :::
 
 ## Open research practices
@@ -195,7 +191,6 @@ Plus: A publication is almost guarranteed.
     -   Treated as legitimate research
 
 ::: notes
-
 Other structural changes may benefit the field as well. Open research is another way to realign incentives. This means that data and methods are openly available. This encourages collaboration, and reduces the ease of fraud. It also makes it easier to replicate studies, and to build on previous research.
 
 Data as publication is a way to reward data collection. This increases data quality, and treats data collection as legitimate research. In a way, this allows researchers to focus on separate aspects of research, and rewards not just the study outcomes but also the way to get there, allowing also for different paths to researchers success.
@@ -230,8 +225,7 @@ However, it is important to remember that these changes are not yet the norm, an
 ::: notes
 When I switched to pharma, I was very happy to learn that practices similar to those described above were not just standard in the industry, but mandated and followed up on by regulators.
 
-Protocols are required and an important part of setting up a clinical trial.
-They fill the role of a preregistration.
+Protocols are required and an important part of setting up a clinical trial. They fill the role of a preregistration.
 
 Th Protocol is a study blueprint that includes the motivation and objectives of the study, the primary and key secondary endpoints as estimands, the methodology, the organisation, and some statistical considerations, such as sample size and power.
 
@@ -264,11 +258,7 @@ Intercurrent events, what events could happen that would affect the interpretati
 
 And finally, the population-level summary, what is the summary measure that will be used to quantify the treatment effect? This could be the mean difference of the outcome variable between the experimental group. In our special case it could be the mean difference of the Bone Mineral Density between the experimental group and the real-world data.
 
-
-The concept of the estimand gives us a structure that helps being very specific about a hypothesis
-This removes researchers degree of freedom during the readout, and encourages good scientific practices.
-
-
+The concept of the estimand gives us a structure that helps being very specific about a hypothesis This removes researchers degree of freedom during the readout, and encourages good scientific practices.
 :::
 
 ## Statistical analysis plan
@@ -284,10 +274,7 @@ This is to avoid the so-called p-hacking, where researchers keep trying differen
 
 Very important to note here is that sticking to the SAP does not mean that data exploration is no longer possible, but it means that the confirmatory analysis is pre-specified, and that the exploratory analysis is declared as such.
 
-In practice for blinded studies, the study team is blinded until the day of the study readout. 
-At that point, the statistical analysis and the relevant outputs have all been programmed, and only in rare cases are any changes to the programs allowed. 
-The programs will then be executed, and the study team will prepare a short slide-deck for the upper management summarising the outcome of the study. 
-Upper management then decides whether the study will be filed with the regulators, or not. 
+In practice for blinded studies, the study team is blinded until the day of the study readout. At that point, the statistical analysis and the relevant outputs have all been programmed, and only in rare cases are any changes to the programs allowed. The programs will then be executed, and the study team will prepare a short slide-deck for the upper management summarising the outcome of the study. Upper management then decides whether the study will be filed with the regulators, or not.
 
 In any case, the results of late-phase studies must be published.
 :::
@@ -313,15 +300,14 @@ In a way, in our minds, these regulators serve as a kind of objective scientist.
 ## Summary
 
 -   Protocols or Preregistrations ensure study integrity
-    -   Your shield! 
+    -   Your shield!
 -   Estimands define the question to be answered
     -   Take a closer look at Estimands for your own project
 -   Statistical Analysis Plans ensure validity of confirmatory results
 -   Regulators ensure good scientific practice
-    - Same objective - to ensure the safety and efficacy of the drug
+    -   Same objective - to ensure the safety and efficacy of the drug
 
 ::: notes
-
 Mention that having a signed-off protocol after data collection will help you stand up to anyone asking you to cut corners. It is your shield.
 :::
 

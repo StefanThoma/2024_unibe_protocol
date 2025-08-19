@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.554">
 
   <meta name="author" content="Stefan Thoma">
-  <meta name="dcterms.date" content="2024-08-21">
+  <meta name="dcterms.date" content="2025-08-20">
   <title>Why we need protocols in science</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -358,7 +358,7 @@ Stefan Thoma
 </div>
 </div>
 
-  <p class="date">2024-08-21</p>
+  <p class="date">2025-08-20</p>
 </section>
 <section>
 <section id="about-me" class="title-slide slide level1 center">
@@ -411,7 +411,7 @@ Stefan Thoma
 </div>
 </div>
 <aside class="notes">
-<p>I have been working at Roche for about 2 years. For anyone who doesn’t know, Roche is a giant pharmaceutical company with around 100 000 employees. I work in Pharma Product Development in the Data and Statistical sciences team. We are around 300 Data scientists, data managers and statisticians sharing three floors in one of the towers in Basel. I don’t know exactly how many people work in our team globally, but quite a few more.</p>
+<p>I have been working at Roche for about 2 years. Roche is a giant pharmaceutical company with around 100 000 employees. I work in Pharma Product Development in the Data and Statistical sciences team. We are around 300 Data scientists, data managers and statisticians sharing three floors in one of the towers in Basel. I don’t know exactly how many people work in our team globally, but quite a few more.</p>
 <p>The main goal of our team is to generate evidence of whether a drug is efficacious and safe for treating specific diseases. The way we do that is by designing and evaluating clinical trials in close collaboration with clinical scientists, physicians, and patients. If a drug works as we intend, we must provide valid and reliable evidence to the regulators to be able to get the drug on the market.</p>
 <p>The data science aspect of this involves many different tasks, and at Roche this is typically split across a team of data scientists. On a clinical trial team you would typically have at least one Biostatistician, one statistical programmer, and a data manager.</p>
 <p>I was originally hired as a statistical programmer where I would program standarised data-sets, run analyses, and generate outputs for the clinical study report. Incidentally, the report would then be written by medical writers, another role.</p>
@@ -503,6 +503,7 @@ Stefan Thoma
 <p>I think the main reason for the replication crisis is that the incentives for researchers are misaligned.</p>
 <p>Let’s start with the publication bias, which states that studies that don’t find significant results are less likely to be published. This is because journals are more likely to publish novel and exciting results. On its face, that may seem reasonable. However, if you design a study to test a hypothesis, you are trying to broaden the knowledge in a specific area. And knowing that a hypothesis is not true is also a very valuable piece of information and would contribute to the field as well.</p>
 <p>Knowing that journals might not want to publish a null result, will also make the researcher to simply skip the publication process and move on to the next hypothesis.</p>
+<p>And then another researcher may come up and test the exact same hypothesis again, not just wasting resources but also increasing the chance of a false positive result, which would then likely be published.</p>
 <p>Questionable research practices are behaviours of reserachers that tie into this search for positive results. They are very often not done on purpose, and are often a result of the pressure to publish and a lack of statistical training.</p>
 <p>P-hacking is one of these practices, where researchers try out different statistical tests until they find a significant result. This, of course, is not a valid way to go about. The method used should be determined before data analysis.</p>
 <p>The same goes for hypothesising after the results are known, or HARKing. That would mean setting up a trial, looking at data, and then readjusting your hypothesis to get significant results, only to then publish the results as if that was your hypothesis from the start. This is essentially passing exploratory research as confirmatory research, and heavily inflates the probability of false positive results.</p>
@@ -539,9 +540,11 @@ Stefan Thoma
 
 <img data-src="images/registered_reports.width-800.png" class="r-stretch quarto-figure-center"><p class="caption">From <span class="citation" data-cites="science">Science (<a href="#/resources" role="doc-biblioref" onclick="">n.d.</a>)</span></p><aside class="notes">
 <p>So, how can we realign the incentives for researchers?</p>
-<p>One way is to move away from rewarding the most headline-grabbing findings.</p>
+<p>This is not really achievable on a personal level and requires change in the current publication and research system. What we can do on an individual researcher or research group level is</p>
 <p>One way to do this is to preregister your study. Preregistration is the practice of writing down your research plan before you start collecting data. This generally includes your research question, your hypothesis, your methods, and your analysis plan. Ideally, this should be done before even starting the experiment, and it is a good idea to publish this plan so that you cannot change it afterwards. One place where you can do this is the Open Science Framework, which is a platform for open research practices. They also provide really good templates for preregistrations.</p>
 <p>A step further are preregistered reports. These are papers that are basically already written and approved for publication by a journal before the data is collected. This is a great way to ensure that the publication is based on the merits of the hypothesis and methods, independent of the results.</p>
+<p>Of course, the initial effort for this seems quite large.</p>
+<p>You have to write a whole paper, develope the analysis, make all the decisions, all without ever collecting or seeing any data. But this is exactly the point. This will allow you to get feedback on your research plan at a stage where you can still change things, without having to collect any additional data. Plus: A publication is almost guarranteed.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -620,7 +623,7 @@ Stefan Thoma
 <p>When I switched to pharma, I was very happy to learn that practices similar to those described above were not just standard in the industry, but mandated and followed up on by regulators.</p>
 <p>Protocols are required and an important part of setting up a clinical trial. They fill the role of a preregistration.</p>
 <p>Th Protocol is a study blueprint that includes the motivation and objectives of the study, the primary and key secondary endpoints as estimands, the methodology, the organisation, and some statistical considerations, such as sample size and power.</p>
-<p>Protocols should be detailed enough to allow other researchers to recreate the study. With a proper protocol in place, you should be unable to pass off exploratory research as confirmatory research. Of course, the protocol can be changed, but this should be done in a transparent way, and the changes must be justified, else you get in trouble with the regulators.</p>
+<p>Protocols should be detailed enough to allow other researchers to recreate the study. With a proper protocol in place, you should be unable to pass off exploratory research as confirmatory research. Of course, the protocol can be changed, but this should be done in a transparent way, and the changes must be justified and approved by the regulators, especially for late-phase studies.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -654,6 +657,7 @@ Stefan Thoma
 <p>The outcome, what is the specific outcome variable being measured? For us that would be the change in Bone Mineral Density at week 52 compared to baseline.</p>
 <p>Intercurrent events, what events could happen that would affect the interpretation of the outcome? In our study, we have a few intercurrent events, such as dropout from the study for reasons other than death, or the use of rescue medication. Such events may introduce missing data into our study, and we want to decide beforehand, how each specific case should be treated.</p>
 <p>And finally, the population-level summary, what is the summary measure that will be used to quantify the treatment effect? This could be the mean difference of the outcome variable between the experimental group. In our special case it could be the mean difference of the Bone Mineral Density between the experimental group and the real-world data.</p>
+<p>The concept of the estimand gives us a structure that helps being very specific about a hypothesis This removes researchers degree of freedom during the readout, and encourages good scientific practices.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -678,6 +682,8 @@ Stefan Thoma
 <p>The statistical analysis plan is a document that describes the precise statistical analysis for each estimand. It is written before looking at the data, and it is important to stick to the plan.<br>
 This is to avoid the so-called p-hacking, where researchers keep trying different analyses until they find one that is significant. It is also crucial to reduce the risk of false positives, and to increase the credibility of the results.</p>
 <p>Very important to note here is that sticking to the SAP does not mean that data exploration is no longer possible, but it means that the confirmatory analysis is pre-specified, and that the exploratory analysis is declared as such.</p>
+<p>In practice for blinded studies, the study team is blinded until the day of the study readout. At that point, the statistical analysis and the relevant outputs have all been programmed, and only in rare cases are any changes to the programs allowed. The programs will then be executed, and the study team will prepare a short slide-deck for the upper management summarising the outcome of the study. Upper management then decides whether the study will be filed with the regulators, or not.</p>
+<p>In any case, the results of late-phase studies must be published.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
